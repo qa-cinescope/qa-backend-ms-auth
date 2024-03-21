@@ -20,7 +20,7 @@ import { ConfigService } from "@nestjs/config";
 
 import { LoginDto, RegisterDto } from "./dto";
 import { Tokens } from "./interfaces";
-import { Token, User } from "@repo/database";
+import { Token, User } from "@prisma/client";
 import { ApiBearerAuth } from "@nestjs/swagger";
 
 import { convertToSecondsUtil } from "@common/utils/";

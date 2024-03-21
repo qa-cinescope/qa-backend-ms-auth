@@ -8,21 +8,19 @@ import {
   ParseUUIDPipe,
   Patch,
   Post,
-  Put,
   Query,
-  Request,
   UseGuards,
   UseInterceptors,
   UsePipes,
   ValidationPipe,
 } from "@nestjs/common";
 
-import { CurrentUser, Public, Roles } from "@common/decorators";
+import { CurrentUser, Roles } from "@common/decorators";
 
 import type { JwtPayload } from "@auth/interfaces";
 import { RolesGuard } from "@auth/guards/role.guard";
 
-import { Role } from "@repo/database";
+import { Role } from "@prisma/client";
 import {
   ApiBearerAuth,
   ApiExcludeEndpoint,

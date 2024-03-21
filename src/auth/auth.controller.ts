@@ -5,7 +5,6 @@ import {
   Controller,
   Get,
   HttpStatus,
-  Param,
   Post,
   Query,
   Req,
@@ -17,7 +16,7 @@ import {
 import { ConfigService } from "@nestjs/config";
 import type { Request, Response } from "express";
 
-import { Cookie, CurrentUser, Public, Roles, UserAgent } from "@common/decorators";
+import { Cookie, Public, UserAgent } from "@common/decorators";
 import { UserResponse } from "@user/responses";
 
 import { LoginDto, RegisterDto } from "./dto";
