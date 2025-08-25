@@ -26,7 +26,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle("Auth API")
     .setDescription("This API for auth")
-    .setVersion("1.04")
+    .setVersion("1.06")
     .addServer(HOST, "API server")
     .addBearerAuth()
     .setExternalDoc("Коллекция json", HOST + "/swagger-json")
